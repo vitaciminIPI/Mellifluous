@@ -17,6 +17,9 @@
 		E17391E7288F8FB90080466A /* SplashScreen View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391E6288F8FB90080466A /* SplashScreen View.swift */; };
 		E17391E9288F9B8B0080466A /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391E8288F9B8B0080466A /* MusicView.swift */; };
 		E17391EB288FA1C90080466A /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391EA288FA1C90080466A /* GenreView.swift */; };
+		E1E1A9CF289186BB003F9EBC /* MusicPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */; };
+		E1E1A9D128919A26003F9EBC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9D028919A26003F9EBC /* BlurView.swift */; };
+		E1E1A9D32891AD91003F9EBC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9D22891AD91003F9EBC /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		E17391E6288F8FB90080466A /* SplashScreen View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreen View.swift"; sourceTree = "<group>"; };
 		E17391E8288F9B8B0080466A /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		E17391EA288FA1C90080466A /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayingView.swift; sourceTree = "<group>"; };
+		E1E1A9D028919A26003F9EBC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		E1E1A9D22891AD91003F9EBC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				E17391D8288F8F9E0080466A /* MelliflluousApp.swift */,
+				E1E1A9D028919A26003F9EBC /* BlurView.swift */,
 				E17391E6288F8FB90080466A /* SplashScreen View.swift */,
 				E17391DA288F8F9E0080466A /* ContentView.swift */,
 				E17391EA288FA1C90080466A /* GenreView.swift */,
+				E1E1A9D22891AD91003F9EBC /* ModalView.swift */,
 				E17391E8288F9B8B0080466A /* MusicView.swift */,
 				E13E4DEC2890E9BF003B67AE /* MusicData.swift */,
+				E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */,
 				E13E4DE72890DCDC003B67AE /* CardView.swift */,
 				E13E4DE92890E3F7003B67AE /* GenreCardData.swift */,
 				E17391DC288F8F9E0080466A /* Assets.xcassets */,
@@ -155,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E1A9D32891AD91003F9EBC /* ModalView.swift in Sources */,
 				E13E4DEA2890E3F7003B67AE /* GenreCardData.swift in Sources */,
 				E17391DB288F8F9E0080466A /* ContentView.swift in Sources */,
 				E17391D9288F8F9E0080466A /* MelliflluousApp.swift in Sources */,
@@ -162,7 +172,9 @@
 				E17391EB288FA1C90080466A /* GenreView.swift in Sources */,
 				E13E4DED2890E9BF003B67AE /* MusicData.swift in Sources */,
 				E13E4DE82890DCDC003B67AE /* CardView.swift in Sources */,
+				E1E1A9D128919A26003F9EBC /* BlurView.swift in Sources */,
 				E17391E7288F8FB90080466A /* SplashScreen View.swift in Sources */,
+				E1E1A9CF289186BB003F9EBC /* MusicPlayingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

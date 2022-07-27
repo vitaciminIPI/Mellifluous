@@ -10,8 +10,10 @@ import SwiftUI
 struct GenreView: View {
     let title: String
     @State var isFavorite: Bool = false
-    @State var heart: String = "heart"
+    @State var heartLogo: String = "heart"
+    @State private var showModal = false
     var musicList: [Album] = DummyData.myFav
+    
     var body: some View {
         ZStack {
             Color(red: 18/255, green: 19/255, blue: 20/255)
@@ -31,8 +33,6 @@ struct GenreView: View {
                     
                     Spacer()
                         .frame(height: 5)
-//                        .frame(minHeight: 50, maxHeight: 350)
-                    
                 }
                 .padding()
                 
@@ -56,25 +56,30 @@ struct GenreView: View {
                                         .padding(.bottom)
                                 }
                                 
-                                Image(systemName: heart)
-                                    .resizable()
-                                    .frame(width: 36, height: 36)
-                                    .foregroundColor(Color(red: 254/255, green: 255/255, blue: 255/255))
-                                    .padding()
-                                    .onTapGesture {
-                                        if isFavorite {
-                                            self.isFavorite = false
-                                            self.heart = "heart"
-                                        }
-                                        else {
-                                            self.isFavorite = true
-                                            self.heart = "heart.fill"
-                                        }
+                                Button() {
+                                    if isFavorite {
+                                        isFavorite = false
+                                        heartLogo = "heart"
                                     }
+                                    else {
+                                        isFavorite = true
+                                        heartLogo = "heart.fill"
+                                    }
+                                    
+                                } label: {
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .frame(width: 36, height: 36)
+                                        .foregroundColor(Color(red: 254/255, green: 255/255, blue: 255/255))
+                                        .padding()
+                                }
                             }
                             else {
                                 Text("No internet connection!")
                             }
+                        }
+                        .onTapGesture {
+                            showModal = true
                         }
                     }
                 }
@@ -86,6 +91,9 @@ struct GenreView: View {
                 .padding([.top])
             }
             .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, alignment: .center)
+            
+            ModalView(isShowing: $showModal)
+            
         }
     }
 }
