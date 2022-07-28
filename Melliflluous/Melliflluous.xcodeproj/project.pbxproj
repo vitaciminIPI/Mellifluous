@@ -17,6 +17,9 @@
 		E17391E7288F8FB90080466A /* SplashScreen View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391E6288F8FB90080466A /* SplashScreen View.swift */; };
 		E17391E9288F9B8B0080466A /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391E8288F9B8B0080466A /* MusicView.swift */; };
 		E17391EB288FA1C90080466A /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391EA288FA1C90080466A /* GenreView.swift */; };
+		E182B52528922BFC00252F62 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = E182B52428922BFC00252F62 /* HalfASheet */; };
+		E182B52928922E7F00252F62 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B52828922E7F00252F62 /* TestView.swift */; };
+		E182B52C28929E8B00252F62 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B52B28929E8B00252F62 /* TableView.swift */; };
 		E1E1A9CF289186BB003F9EBC /* MusicPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */; };
 		E1E1A9D128919A26003F9EBC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9D028919A26003F9EBC /* BlurView.swift */; };
 		E1E1A9D32891AD91003F9EBC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1A9D22891AD91003F9EBC /* ModalView.swift */; };
@@ -34,6 +37,8 @@
 		E17391E6288F8FB90080466A /* SplashScreen View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreen View.swift"; sourceTree = "<group>"; };
 		E17391E8288F9B8B0080466A /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		E17391EA288FA1C90080466A /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		E182B52828922E7F00252F62 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E182B52B28929E8B00252F62 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayingView.swift; sourceTree = "<group>"; };
 		E1E1A9D028919A26003F9EBC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		E1E1A9D22891AD91003F9EBC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182B52528922BFC00252F62 /* HalfASheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,18 +76,14 @@
 			isa = PBXGroup;
 			children = (
 				E17391D8288F8F9E0080466A /* MelliflluousApp.swift */,
-				E1E1A9D028919A26003F9EBC /* BlurView.swift */,
-				E17391E6288F8FB90080466A /* SplashScreen View.swift */,
-				E17391DA288F8F9E0080466A /* ContentView.swift */,
-				E17391EA288FA1C90080466A /* GenreView.swift */,
-				E1E1A9D22891AD91003F9EBC /* ModalView.swift */,
-				E17391E8288F9B8B0080466A /* MusicView.swift */,
-				E13E4DEC2890E9BF003B67AE /* MusicData.swift */,
-				E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */,
-				E13E4DE72890DCDC003B67AE /* CardView.swift */,
-				E13E4DE92890E3F7003B67AE /* GenreCardData.swift */,
 				E17391DC288F8F9E0080466A /* Assets.xcassets */,
+				E17391DA288F8F9E0080466A /* ContentView.swift */,
+				E13E4DEC2890E9BF003B67AE /* MusicData.swift */,
+				E13E4DE92890E3F7003B67AE /* GenreCardData.swift */,
+				E182B52828922E7F00252F62 /* TestView.swift */,
+				E182B52A28926F7B00252F62 /* View */,
 				E17391DE288F8F9E0080466A /* Preview Content */,
+				E182B52B28929E8B00252F62 /* TableView.swift */,
 			);
 			path = Melliflluous;
 			sourceTree = "<group>";
@@ -92,6 +94,20 @@
 				E17391DF288F8F9E0080466A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E182B52A28926F7B00252F62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E1A9D028919A26003F9EBC /* BlurView.swift */,
+				E17391E6288F8FB90080466A /* SplashScreen View.swift */,
+				E17391EA288FA1C90080466A /* GenreView.swift */,
+				E1E1A9D22891AD91003F9EBC /* ModalView.swift */,
+				E17391E8288F9B8B0080466A /* MusicView.swift */,
+				E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */,
+				E13E4DE72890DCDC003B67AE /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +126,9 @@
 			dependencies = (
 			);
 			name = Melliflluous;
+			packageProductDependencies = (
+				E182B52428922BFC00252F62 /* HalfASheet */,
+			);
 			productName = Melliflluous;
 			productReference = E17391D5288F8F9E0080466A /* Melliflluous.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +157,9 @@
 				Base,
 			);
 			mainGroup = E17391CC288F8F9E0080466A;
+			packageReferences = (
+				E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */,
+			);
 			productRefGroup = E17391D6288F8F9E0080466A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182B52C28929E8B00252F62 /* TableView.swift in Sources */,
+				E182B52928922E7F00252F62 /* TestView.swift in Sources */,
 				E1E1A9D32891AD91003F9EBC /* ModalView.swift in Sources */,
 				E13E4DEA2890E3F7003B67AE /* GenreCardData.swift in Sources */,
 				E17391DB288F8F9E0080466A /* ContentView.swift in Sources */,
@@ -375,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E182B52428922BFC00252F62 /* HalfASheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17391CD288F8F9E0080466A /* Project object */;
 }

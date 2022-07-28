@@ -10,15 +10,14 @@ import SwiftUI
 struct MusicPlayingView: View {
     let title: String
     let author: String
-    let timer: Int = 10
+    let timer = 10
     @State var isPlaying = true
     @State var isFavorite = false
     @State var heartLogo = "heart"
     @State var playLogo = "pause.fill"
     
     var body: some View {
-        ZStack {
-            
+       ZStack {
             Image("BgSound")
                 .resizable()
                 .ignoresSafeArea()
@@ -28,12 +27,17 @@ struct MusicPlayingView: View {
             
             VStack {
                 //MARK: - Minimize Button
-                HStack {
-                    Image(systemName: "chevron.down")
-                        .resizable()
-                        .frame(width: 19, height: 19)
-                        .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
-                        .padding()
+                HStack (alignment: .top) {
+                    Button() {
+                        
+                    } label: {
+                        Image(systemName: "chevron.down")
+                            .resizable()
+                            .frame(width: 29, height: 19)
+                            .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
+                            .padding()
+                    }
+                    
                 }
                 .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: 30, maxHeight: 30, alignment: .leading)
                 
@@ -105,7 +109,7 @@ struct MusicPlayingView: View {
                         Image(systemName: "backward.fill")
                             .resizable()
                             .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
-                            .frame(width: 61, height: 43)
+                            .frame(width: 51, height: 43)
                     }
                     
                     
@@ -131,7 +135,7 @@ struct MusicPlayingView: View {
                         Image(systemName: "forward.fill")
                             .resizable()
                             .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
-                            .frame(width: 61, height: 43)
+                            .frame(width: 51, height: 43)
                     }
                 }
                 .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity)
@@ -140,6 +144,9 @@ struct MusicPlayingView: View {
                     .frame(height: 100)
             }
         }
+       .navigationBarTitle("")
+       .navigationBarHidden(true)
+       .navigationBarBackButtonHidden(true)
     }
 }
 

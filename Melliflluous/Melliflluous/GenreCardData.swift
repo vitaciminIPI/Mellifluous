@@ -16,8 +16,8 @@ struct Card: Identifiable {
 struct GenreCard {
     static var cards = [
         Card(image: "Classical", title: "Classical"),
-        Card(image: "Instrumental", title: "Instrumental"),
         Card(image: "Jazz", title: "Jazz"),
-        Card(image: "Lofi", title: "Lofi")
+        Card(image: "Instrumental", title: "Instrumental"),
+        Card(image: "Lofi", title: "Lo-Fi")
     ]
 }

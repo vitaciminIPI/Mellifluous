@@ -22,4 +22,5 @@ struct DummyData {
         Album(title: "Symphony No. 5", author: "Beethoven", url: "www.google.com"),
         Album(title: "Mazurkas", author: "Choppin", url: "www.google.com"),
     ]
+    static var musicDummy = Album(title: "It's my life", author: "Bon Jovi", url: "www.google.com")
 }

@@ -11,52 +11,59 @@ struct ModalView: View {
     @Binding var isShowing: Bool
     var minutes: [String] = ["10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"]
     @State private var selectedMinutes: String = "10"
+    var music: Album
+    
     var body: some View {
-        ZStack (alignment: .bottom) {
-            if isShowing {
-                Color.black
-                    .opacity(0.9)
-                    .ignoresSafeArea()
-                    .onTapGesture {
-                        isShowing = false
-                    }
+        NavigationView{
+            ZStack (alignment: .bottom) {
+                if isShowing {
+                    Color.black
+                        .opacity(0.9)
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            isShowing = false
+                        }
+                    mainView
+                        .transition(.move(edge: .bottom))
+                }
+                
             }
-            
-            mainView
-                .transition(.move(edge: .bottom))
-           
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .ignoresSafeArea()
+            .animation(.easeInOut(duration: 3), value: 1)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-        .ignoresSafeArea()
-        .animation(.easeInOut, value: 1)
     }
     
     var mainView: some View {
         VStack {
             ZStack {
                 VStack (spacing: 20) {
-                    HStack {
-                        Spacer()
-                        Button("Done") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    NavigationLink(destination: MusicPlayingView(title: DummyData.musicDummy.title, author: DummyData.musicDummy.author)) {
+                        HStack {
+                            Spacer()
+                            Button("Start") {
+                                isShowing = false
+                            }
+                            .padding()
                         }
-                        .padding()
+                        .frame(maxWidth: .infinity)
                     }
-                    .frame(maxWidth: .infinity)
                     
+
                     Text("How Long do you want to focus?")
                         .font(.system(size: 21))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
-                    
+
                     Picker("Choose time in minutes", selection: $selectedMinutes) {
                         ForEach(minutes, id: \.self) {
                             Text($0)
                                 .font(.system(size: 30))
-                                .foregroundColor(Color(red: 193/255, green: 187/255, blue: 187/255))
+                                .foregroundColor(Color(red: 255/255, green: 254/255, blue: 254/255))
                         }
                     }
                 }
+                .pickerStyle(.wheel)
                 .padding()
             }
             .frame(maxHeight: .infinity)
@@ -69,6 +76,7 @@ struct ModalView: View {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        GenreView(title: "Myfavorite")
+//        TestView()
+        ModalView(isShowing: .constant(true), music: DummyData.musicDummy)
     }
 }

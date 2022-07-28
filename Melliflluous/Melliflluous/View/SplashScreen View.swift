@@ -21,9 +21,7 @@ struct SplashScreenView: View {
                 Color(red: 16/255, green: 16/255, blue: 16/255)
                     .ignoresSafeArea()
                 VStack {
-                    Image(systemName: "hare.fill")
-                        .font(.system(size: 80))
-                        .foregroundColor(.red)
+                    Image("AppLogo")
                     
                     Spacer()
                         .frame(height: 16)

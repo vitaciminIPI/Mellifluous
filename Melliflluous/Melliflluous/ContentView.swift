@@ -14,7 +14,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Music", systemImage: "music.note")
                 }
-            GenreView(title: "My Favorite")
+            GenreView(title: "My Favorite", cover: "MyFav")
                 .tabItem {
                     Label("Favorite", systemImage: "heart.fill")
                 }
