@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E102E6962892EE89009B1B47 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E6952892EE89009B1B47 /* TimerView.swift */; };
 		E13E4DE82890DCDC003B67AE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DE72890DCDC003B67AE /* CardView.swift */; };
-		E13E4DEA2890E3F7003B67AE /* GenreCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DE92890E3F7003B67AE /* GenreCardData.swift */; };
-		E13E4DED2890E9BF003B67AE /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DEC2890E9BF003B67AE /* MusicData.swift */; };
+		E13E4DEA2890E3F7003B67AE /* GenreCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */; };
+		E13E4DED2890E9BF003B67AE /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DEC2890E9BF003B67AE /* MusicModel.swift */; };
 		E17391D9288F8F9E0080466A /* MelliflluousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391D8288F8F9E0080466A /* MelliflluousApp.swift */; };
 		E17391DB288F8F9E0080466A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17391DA288F8F9E0080466A /* ContentView.swift */; };
 		E17391DD288F8F9E0080466A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17391DC288F8F9E0080466A /* Assets.xcassets */; };
@@ -26,9 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E102E6952892EE89009B1B47 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E13E4DE72890DCDC003B67AE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		E13E4DE92890E3F7003B67AE /* GenreCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCardData.swift; sourceTree = "<group>"; };
-		E13E4DEC2890E9BF003B67AE /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
+		E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCardModel.swift; sourceTree = "<group>"; };
+		E13E4DEC2890E9BF003B67AE /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		E17391D5288F8F9E0080466A /* Melliflluous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melliflluous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17391D8288F8F9E0080466A /* MelliflluousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelliflluousApp.swift; sourceTree = "<group>"; };
 		E17391DA288F8F9E0080466A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,12 +80,11 @@
 				E17391D8288F8F9E0080466A /* MelliflluousApp.swift */,
 				E17391DC288F8F9E0080466A /* Assets.xcassets */,
 				E17391DA288F8F9E0080466A /* ContentView.swift */,
-				E13E4DEC2890E9BF003B67AE /* MusicData.swift */,
-				E13E4DE92890E3F7003B67AE /* GenreCardData.swift */,
+				E13E4DEC2890E9BF003B67AE /* MusicModel.swift */,
+				E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */,
 				E182B52828922E7F00252F62 /* TestView.swift */,
 				E182B52A28926F7B00252F62 /* View */,
 				E17391DE288F8F9E0080466A /* Preview Content */,
-				E182B52B28929E8B00252F62 /* TableView.swift */,
 			);
 			path = Melliflluous;
 			sourceTree = "<group>";
@@ -106,6 +107,8 @@
 				E17391E8288F9B8B0080466A /* MusicView.swift */,
 				E1E1A9CE289186BB003F9EBC /* MusicPlayingView.swift */,
 				E13E4DE72890DCDC003B67AE /* CardView.swift */,
+				E102E6952892EE89009B1B47 /* TimerView.swift */,
+				E182B52B28929E8B00252F62 /* TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,15 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E102E6962892EE89009B1B47 /* TimerView.swift in Sources */,
 				E182B52C28929E8B00252F62 /* TableView.swift in Sources */,
 				E182B52928922E7F00252F62 /* TestView.swift in Sources */,
 				E1E1A9D32891AD91003F9EBC /* ModalView.swift in Sources */,
-				E13E4DEA2890E3F7003B67AE /* GenreCardData.swift in Sources */,
+				E13E4DEA2890E3F7003B67AE /* GenreCardModel.swift in Sources */,
 				E17391DB288F8F9E0080466A /* ContentView.swift in Sources */,
 				E17391D9288F8F9E0080466A /* MelliflluousApp.swift in Sources */,
 				E17391E9288F9B8B0080466A /* MusicView.swift in Sources */,
 				E17391EB288FA1C90080466A /* GenreView.swift in Sources */,
-				E13E4DED2890E9BF003B67AE /* MusicData.swift in Sources */,
+				E13E4DED2890E9BF003B67AE /* MusicModel.swift in Sources */,
 				E13E4DE82890DCDC003B67AE /* CardView.swift in Sources */,
 				E1E1A9D128919A26003F9EBC /* BlurView.swift in Sources */,
 				E17391E7288F8FB90080466A /* SplashScreen View.swift in Sources */,

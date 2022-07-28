@@ -11,7 +11,10 @@ import SwiftUI
 struct MelliflluousApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+//            SplashScreenView()
+//            TimerView()
+//            TestView()
+            MusicPlayingView(title: "asdfasdf", author: "asdfaf")
         }
     }
 }

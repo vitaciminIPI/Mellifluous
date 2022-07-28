@@ -10,7 +10,7 @@ import SwiftUI
 struct MusicPlayingView: View {
     let title: String
     let author: String
-    let timer = 10
+    @State var timer = 10
     @State var isPlaying = true
     @State var isFavorite = false
     @State var heartLogo = "heart"

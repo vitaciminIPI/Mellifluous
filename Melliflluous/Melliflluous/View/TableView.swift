@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TableView: View {
-    @State var musicList: [Album]
+    @State var musicList: [Music]
     @State var musicTitle: String
     @State var musicAuthor: String
     @State var isFavorite: Bool

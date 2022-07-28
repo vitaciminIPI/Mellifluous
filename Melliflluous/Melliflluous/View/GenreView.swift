@@ -11,8 +11,8 @@ struct GenreView: View {
     @State var isFavorite: Bool = false
     @State var heartLogo: String = "heart"
     @State private var showModal = false
-    var musicList: [Album] = DummyData.myFav
-    var song: Album = Album(title: "asdf", author: "bonjopi", url: "www.google.com")
+    var musicList: [Music] = DummyData.myFav
+    var song: Music = Music(title: "asdf", author: "bonjopi", url: "www.google.com")
     let title: String
     let cover: String
 
@@ -82,6 +82,9 @@ struct GenreView: View {
 //                            }
 //                        }
                         TableView(musicList: musicList, musicTitle: music.title, musicAuthor: music.author, isFavorite: isFavorite, heartLogo: heartLogo)
+                            .onTapGesture {
+                                showModal.toggle()
+                            }
                     }
                 }
                 .onAppear {
@@ -93,7 +96,7 @@ struct GenreView: View {
             }
             .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, alignment: .center)
             
-//            ModalView(isShowing: $showModal, music: song)
+            ModalView(isShowing: $showModal, music: song)
             
         }
     }

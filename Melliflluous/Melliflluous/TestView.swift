@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TestView: View {
     @State private var showModal = false
+    @State var music = Music(title: "asdfa", author: "asdfasd", url: "asdfsadf")
     var body: some View {
         ZStack {
             VStack {
@@ -17,7 +18,7 @@ struct TestView: View {
                 }
 //                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             }
-//            ModalView(isShowing: $showModal)
+            ModalView(isShowing: $showModal, music: music)
         }
     }
 }

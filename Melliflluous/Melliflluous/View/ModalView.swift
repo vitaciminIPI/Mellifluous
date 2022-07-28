@@ -11,44 +11,40 @@ struct ModalView: View {
     @Binding var isShowing: Bool
     var minutes: [String] = ["10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"]
     @State private var selectedMinutes: String = "10"
-    var music: Album
+    var music: Music
     
     var body: some View {
-        NavigationView{
-            ZStack (alignment: .bottom) {
-                if isShowing {
-                    Color.black
-                        .opacity(0.9)
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            isShowing = false
-                        }
-                    mainView
-                        .transition(.move(edge: .bottom))
-                }
-                
+        ZStack (alignment: .bottom) {
+            if isShowing {
+                Color.black
+                    .opacity(0.9)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        isShowing = false
+                    }
+                mainView
+                    .transition(.move(edge: .bottom))
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-            .ignoresSafeArea()
-            .animation(.easeInOut(duration: 3), value: 1)
+            
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .ignoresSafeArea()
+        .animation(.easeInOut(duration: 3), value: 1)
     }
     
     var mainView: some View {
         VStack {
             ZStack {
                 VStack (spacing: 20) {
-                    NavigationLink(destination: MusicPlayingView(title: DummyData.musicDummy.title, author: DummyData.musicDummy.author)) {
-                        HStack {
-                            Spacer()
-                            Button("Start") {
-                                isShowing = false
-                            }
-                            .padding()
+                    HStack {
+                        Spacer()
+                        Button("Start") {
+                            isShowing = false
                         }
-                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.blue)
+                        .padding()
                     }
-                    
+                    .frame(maxWidth: .infinity)
 
                     Text("How Long do you want to focus?")
                         .font(.system(size: 21))
