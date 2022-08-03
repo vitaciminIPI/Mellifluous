@@ -11,6 +11,7 @@ struct GenreView: View {
     @State var isFavorite: Bool = false
     @State var heartLogo: String = "heart"
     @State private var showModal = false
+    @State var playingMusic = false
     var musicList: [Music] = DummyData.myFav
     var song: Music = Music(title: "asdf", author: "bonjopi", url: "www.google.com")
     let title: String

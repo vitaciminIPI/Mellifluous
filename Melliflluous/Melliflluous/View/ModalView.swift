@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ModalView: View {
     @Binding var isShowing: Bool
-    var minutes: [String] = ["10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"]
     @State private var selectedMinutes: String = "10"
+    @State var playingMusic: Bool = false
+    var minutes: [String] = ["10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60"]
     var music: Music
     
     var body: some View {
@@ -26,6 +27,10 @@ struct ModalView: View {
                     .transition(.move(edge: .bottom))
             }
             
+//            if playingMusic {
+//                MusicPlayingView(title: music.title, author: music.author, showPlayingMusic: $playingMusic)
+//            }
+ 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
@@ -40,6 +45,7 @@ struct ModalView: View {
                         Spacer()
                         Button("Start") {
                             isShowing = false
+                            playingMusic.toggle()
                         }
                         .foregroundColor(.blue)
                         .padding()
@@ -73,6 +79,6 @@ struct ModalView: View {
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
 //        TestView()
-        ModalView(isShowing: .constant(true), music: DummyData.musicDummy)
+        ModalView(isShowing: .constant(true), playingMusic: true, music: DummyData.musicDummy)
     }
 }

@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct MelliflluousApp: App {
+    let data = MusicManager()
+    
+    init() {
+        FirebaseApp.configure()
+        data.fetchData()
+    }
+    
     var body: some Scene {
         WindowGroup {
 //            SplashScreenView()
 //            TimerView()
-//            TestView()
-            MusicPlayingView(title: "asdfasdf", author: "asdfaf")
+            //it works for fetch data
+//            TestView(data: data)
+            TestView()
+//            MusicPlayingView(title: "asdfasdf", author: "asdfaf")
         }
     }
 }

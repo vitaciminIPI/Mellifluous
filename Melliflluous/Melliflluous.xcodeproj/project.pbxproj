@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E102E6962892EE89009B1B47 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E6952892EE89009B1B47 /* TimerView.swift */; };
+		E11D071E2897E9F800B32530 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D071D2897E9F800B32530 /* MusicManager.swift */; };
+		E11D07212897ED3100B32530 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E11D07202897ED3100B32530 /* FirebaseFirestore */; };
+		E11D07232897ED3100B32530 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E11D07222897ED3100B32530 /* FirebaseFirestoreCombine-Community */; };
+		E11D07252897ED3100B32530 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E11D07242897ED3100B32530 /* FirebaseFirestoreSwift */; };
+		E11D07272897ED3100B32530 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E11D07262897ED3100B32530 /* FirebaseStorage */; };
+		E11D07292897ED3100B32530 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E11D07282897ED3100B32530 /* FirebaseStorageCombine-Community */; };
+		E11D072B2897F64000B32530 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11D072A2897F64000B32530 /* GoogleService-Info.plist */; };
+		E11D072D2898019C00B32530 /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11D072C2898019C00B32530 /* MusicDataModel.swift */; };
+		E1324D83289AE1EE00F85677 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1324D82289AE1EE00F85677 /* TimerViewModel.swift */; };
 		E13E4DE82890DCDC003B67AE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DE72890DCDC003B67AE /* CardView.swift */; };
 		E13E4DEA2890E3F7003B67AE /* GenreCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */; };
 		E13E4DED2890E9BF003B67AE /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E4DEC2890E9BF003B67AE /* MusicModel.swift */; };
@@ -28,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		E102E6952892EE89009B1B47 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E11D071D2897E9F800B32530 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		E11D072A2897F64000B32530 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E11D072C2898019C00B32530 /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
+		E1324D82289AE1EE00F85677 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		E13E4DE72890DCDC003B67AE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCardModel.swift; sourceTree = "<group>"; };
 		E13E4DEC2890E9BF003B67AE /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
@@ -51,13 +64,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11D07232897ED3100B32530 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				E182B52528922BFC00252F62 /* HalfASheet in Frameworks */,
+				E11D07212897ED3100B32530 /* FirebaseFirestore in Frameworks */,
+				E11D07272897ED3100B32530 /* FirebaseStorage in Frameworks */,
+				E11D07292897ED3100B32530 /* FirebaseStorageCombine-Community in Frameworks */,
+				E11D07252897ED3100B32530 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1324D84289AE8A400F85677 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E13E4DEC2890E9BF003B67AE /* MusicModel.swift */,
+				E11D072C2898019C00B32530 /* MusicDataModel.swift */,
+				E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1324D85289AE8B400F85677 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1324D82289AE1EE00F85677 /* TimerViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E1324D86289AE8F800F85677 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E11D071D2897E9F800B32530 /* MusicManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E17391CC288F8F9E0080466A = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +121,14 @@
 		E17391D7288F8F9E0080466A /* Melliflluous */ = {
 			isa = PBXGroup;
 			children = (
+				E1324D86289AE8F800F85677 /* Helper */,
+				E1324D85289AE8B400F85677 /* View Model */,
 				E17391D8288F8F9E0080466A /* MelliflluousApp.swift */,
 				E17391DC288F8F9E0080466A /* Assets.xcassets */,
 				E17391DA288F8F9E0080466A /* ContentView.swift */,
-				E13E4DEC2890E9BF003B67AE /* MusicModel.swift */,
-				E13E4DE92890E3F7003B67AE /* GenreCardModel.swift */,
 				E182B52828922E7F00252F62 /* TestView.swift */,
+				E11D072A2897F64000B32530 /* GoogleService-Info.plist */,
+				E1324D84289AE8A400F85677 /* Model */,
 				E182B52A28926F7B00252F62 /* View */,
 				E17391DE288F8F9E0080466A /* Preview Content */,
 			);
@@ -131,6 +177,11 @@
 			name = Melliflluous;
 			packageProductDependencies = (
 				E182B52428922BFC00252F62 /* HalfASheet */,
+				E11D07202897ED3100B32530 /* FirebaseFirestore */,
+				E11D07222897ED3100B32530 /* FirebaseFirestoreCombine-Community */,
+				E11D07242897ED3100B32530 /* FirebaseFirestoreSwift */,
+				E11D07262897ED3100B32530 /* FirebaseStorage */,
+				E11D07282897ED3100B32530 /* FirebaseStorageCombine-Community */,
 			);
 			productName = Melliflluous;
 			productReference = E17391D5288F8F9E0080466A /* Melliflluous.app */;
@@ -162,6 +213,7 @@
 			mainGroup = E17391CC288F8F9E0080466A;
 			packageReferences = (
 				E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */,
+				E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E17391D6288F8F9E0080466A /* Products */;
 			projectDirPath = "";
@@ -179,6 +231,7 @@
 			files = (
 				E17391E0288F8F9E0080466A /* Preview Assets.xcassets in Resources */,
 				E17391DD288F8F9E0080466A /* Assets.xcassets in Resources */,
+				E11D072B2897F64000B32530 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +253,12 @@
 				E17391EB288FA1C90080466A /* GenreView.swift in Sources */,
 				E13E4DED2890E9BF003B67AE /* MusicModel.swift in Sources */,
 				E13E4DE82890DCDC003B67AE /* CardView.swift in Sources */,
+				E11D072D2898019C00B32530 /* MusicDataModel.swift in Sources */,
+				E1324D83289AE1EE00F85677 /* TimerViewModel.swift in Sources */,
 				E1E1A9D128919A26003F9EBC /* BlurView.swift in Sources */,
 				E17391E7288F8FB90080466A /* SplashScreen View.swift in Sources */,
 				E1E1A9CF289186BB003F9EBC /* MusicPlayingView.swift in Sources */,
+				E11D071E2897E9F800B32530 /* MusicManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +461,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/franklynw/HalfASheet.git";
@@ -416,6 +480,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E11D07202897ED3100B32530 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E11D07222897ED3100B32530 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E11D07242897ED3100B32530 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		E11D07262897ED3100B32530 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E11D07282897ED3100B32530 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11D071F2897ED3100B32530 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
 		E182B52428922BFC00252F62 /* HalfASheet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E182B52328922BFC00252F62 /* XCRemoteSwiftPackageReference "HalfASheet" */;
